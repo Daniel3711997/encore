@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unnecessary-type-constraint */
-
 import type { Context } from 'react';
 import type { IProviderProps, IAppContextProps, TOrientation } from '../types';
 
@@ -35,7 +33,7 @@ export const createAppContext = <T,>(theme: T): Context<IAppContextProps<T>> => 
     });
 };
 
-export const AppProvider = <T extends unknown>({ children, theme, context: AppContext }: IProviderProps<T>) => {
+export const AppProvider = <T,>({ children, theme, context: AppContext }: IProviderProps<T>) => {
     const dimensions = useDimensions();
 
     const [appTheme, setAppTheme] = useState<T>(theme);
