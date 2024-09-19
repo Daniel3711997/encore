@@ -2,7 +2,7 @@
     "name": "@unpack/encore",
     "version": "0.1.0",
     "license": "MIT",
-    "source": "./src/index.tsx",
+    "source": "./src/index.ts",
     "main": "./lib/commonjs/index.js",
     "module": "./lib/module/index.js",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
