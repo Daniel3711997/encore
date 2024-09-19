@@ -1,27 +1,46 @@
-import { multiply } from '@unpack/encore';
-import { useState, useEffect } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { AppProvider } from '@unpack/encore';
+import { StrictMode } from 'react';
+import { View, Text } from 'react-native';
 
-export default function App() {
-    const [result, setResult] = useState<number | undefined>();
+import { theme, appContext, StyleSheet, useStyles } from './services/tools';
 
-    useEffect(() => {
-        multiply(3, 7)
-            .then(setResult)
-            .catch(() => null);
-    }, []);
+function MyComponent() {
+    const styles = useStyles(stylesFactory);
 
     return (
         <View style={styles.container}>
-            <Text>Result: {result}</Text>
+            <Text style={styles.text}>Hello World</Text>
         </View>
     );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+export default function App() {
+    return (
+        <StrictMode>
+            <AppProvider theme={theme} context={appContext}>
+                <MyComponent />
+            </AppProvider>
+        </StrictMode>
+    );
+}
+
+const stylesFactory = StyleSheet.create(context => {
+    return {
+        text: {
+            fontSize: 20,
+            color: context.theme.colors.secondary,
+            '(min-width: 500px)': {
+                color: context.theme.colors.primary,
+            },
+        },
+        container: {
+            flex: 1,
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: context.theme.colors.primary,
+            '(min-width: 500px)': {
+                backgroundColor: context.theme.colors.secondary,
+            },
+        },
+    };
 });
