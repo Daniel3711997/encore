@@ -1,0 +1,17 @@
+{
+    "version": "0.2",
+    "language": "en-US",
+    "useGitignore": true,
+    "import": ["@cspell/cspell-bundled-dicts"],
+    "words": [],
+    "ignorePaths": [
+        ".vscode",
+        "lib",
+        "__tests__",
+        "node_modules",
+        ".yarnrc.yml",
+        ".prettierrc.json",
+        "package.json",
+        "package-lock.json"
+    ]
+}

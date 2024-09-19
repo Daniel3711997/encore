@@ -1,0 +1,52 @@
+{
+    // Path Intellisense
+    "path-intellisense.mappings": {
+        "@app": "${workspaceFolder}/src"
+    },
+
+    // Code Spell Checker
+    "cSpell.files": ["**/.*.json", "**/*.{js,jsx,ts,tsx,json}"],
+
+    // General
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 120,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
+    "javascript.suggest.paths": false,
+    "typescript.suggest.paths": false,
+    "javascript.validate.enable": true,
+    "typescript.validate.enable": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.occurrencesHighlight": "off",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "typescript.preferences.importModuleSpecifierEnding": "auto",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+
+    // Trailing Spaces
+    "trailing-spaces.highlightCurrentLine": false,
+    "trailing-spaces.backgroundColor": "rgba(255, 0, 0, 0.4)",
+    "trailing-spaces.borderColor": "rgba(255, 100, 100, 0.15)",
+
+    // ESLint
+    "eslint.codeActionsOnSave.rules": ["!/*", "import/*", "react-hooks/*", "sort-exports/*"],
+
+    // Error Lens
+    "errorLens.margin": "25px",
+    "errorLens.fontSize": "12px",
+    "errorLens.padding": "2px 5px",
+    "errorLens.borderRadius": "4px",
+    "errorLens.messageMaxChars": 150,
+    "errorLens.gutterIconsEnabled": true,
+    "errorLens.statusBarIconsEnabled": false,
+    "errorLens.fontFamily": "JetBrains Mono",
+    "errorLens.statusBarIconsPriority": 90000,
+    "errorLens.messageBackgroundMode": "message",
+    "errorLens.statusBarMessagePriority": -100000,
+    "errorLens.enabledDiagnosticLevels": ["error", "warning" /* "info", "hint" */]
+}

@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "usernamehw.errorlens",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "yoavbls.pretty-ts-errors",
+        "github.vscode-github-actions",
+        "msjsdiag.vscode-react-native",
+        "vincaslt.highlight-matching-tag",
+        "christian-kohler.path-intellisense",
+        "meganrogge.template-string-converter",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}

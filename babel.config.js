@@ -1,19 +1,10 @@
 module.exports = {
-    plugins: [
-        ['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }],
-
+    presets: [
         [
-            'module-resolver',
+            'module:react-native-builder-bob/babel-preset',
             {
-                alias: {
-                    '@app': './src',
-                    '@assets': './assets',
-                },
-                root: ['.'],
-                extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+                modules: 'commonjs',
             },
         ],
     ],
-
-    presets: [['module:metro-react-native-babel-preset', { useTransformReactJSXExperimental: true }]],
 };

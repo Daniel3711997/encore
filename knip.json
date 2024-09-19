@@ -1,0 +1,18 @@
+{
+    "ignoreBinaries": [],
+    "ignore": [
+        "node_modules/**",
+        "babel.config.js",
+        "example/App.js",
+        "example/src/App.tsx",
+        "example/metro.config.js"
+    ],
+    "ignoreDependencies": [
+        "@types/jest",
+        "@babel/core",
+        "react-native-web",
+        "eslint-plugin-jest",
+        "@expo/metro-runtime",
+        "@cspell/cspell-bundled-dicts"
+    ]
+}
