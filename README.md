@@ -17,13 +17,7 @@
 
 # Installation
 
-```sh
-yarn add @unpack/encore
-
-or
-
-npm install @unpack/encore
-```
+https://www.pluralsight.com/resources/blog/guides/install-npm-packages-from-gitgithub
 
 # Usage
 
