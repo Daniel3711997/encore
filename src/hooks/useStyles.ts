@@ -7,8 +7,8 @@ import { useAppContext } from '../components/AppContext';
 import { useFunctions } from '../hooks/useFunctions';
 
 export const useStyles = <T, U>(styles: StylesConstructor<T, U>, appContext: Context<AppContextProps<U>>) => {
-    const context = useAppContext(appContext);
     const functions = useFunctions(appContext);
+    const context = useAppContext(appContext);
 
     const limitedContext = useMemo(
         () => ({

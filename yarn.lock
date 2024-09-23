@@ -4782,7 +4782,7 @@ __metadata:
     husky: ^9.1.6
     inquirer: 9
     jest: ^29.7.0
-    knip: ^5.30.2
+    knip: ^5.30.4
     lint-staged: ^15.2.10
     lodash.isequal: ^4.5.0
     pinst: ^3.0.0
@@ -11490,9 +11490,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"knip@npm:^5.30.2":
-  version: 5.30.2
-  resolution: "knip@npm:5.30.2"
+"knip@npm:^5.30.4":
+  version: 5.30.4
+  resolution: "knip@npm:5.30.4"
   dependencies:
     "@nodelib/fs.walk": 1.2.8
     "@snyk/github-codeowners": 1.1.0
@@ -11505,7 +11505,7 @@ __metadata:
     picocolors: ^1.0.0
     picomatch: ^4.0.1
     pretty-ms: ^9.0.0
-    smol-toml: ^1.1.4
+    smol-toml: ^1.3.0
     strip-json-comments: 5.0.1
     summary: 2.1.0
     zod: ^3.22.4
@@ -11516,7 +11516,7 @@ __metadata:
   bin:
     knip: bin/knip.js
     knip-bun: bin/knip-bun.js
-  checksum: fafb6ee078c1e9f24e83c08c6b97c7ad82ef78d043eff6a064639e08354a4b81cbb132d705acc53874d0f0d02dc690d960f75efe8783ac349fde491bcbf1b742
+  checksum: 5174bc9986fb951ead895e1c22a67733f6c7ba22f59f45c4f7189a34dbe8b5f3da5879d92631bc69510699daea1b1e5f8ab46d1c4dc4e7331f2b690d6a589178
   languageName: node
   linkType: hard
 
@@ -15149,7 +15149,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"smol-toml@npm:^1.1.4":
+"smol-toml@npm:^1.3.0":
   version: 1.3.0
   resolution: "smol-toml@npm:1.3.0"
   checksum: 79e1db6b6cd32a13ad7602bfe1a02f20894fe599657a5cc2c8ffab7c3de4ba51f7426b701b513f9b859560918b36a63f7c73f7eaf6def8a1dc73db74ffd9b601
