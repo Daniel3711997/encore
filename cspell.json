@@ -13,5 +13,6 @@
         ".prettierrc.json",
         "package.json",
         "package-lock.json"
-    ]
+    ],
+    "enableFiletypes": ["json", "typescript", "typescriptreact", "javascript", "javascriptreact"]
 }

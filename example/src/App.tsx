@@ -4,26 +4,6 @@ import { View, Text } from 'react-native';
 
 import { theme, appContext, StyleSheet, useStyles } from './services/tools';
 
-function MyComponent() {
-    const styles = useStyles(stylesFactory);
-
-    return (
-        <View style={styles.container}>
-            <Text style={styles.text}>Hello World</Text>
-        </View>
-    );
-}
-
-export default function App() {
-    return (
-        <StrictMode>
-            <AppProvider theme={theme} context={appContext}>
-                <MyComponent />
-            </AppProvider>
-        </StrictMode>
-    );
-}
-
 const stylesFactory = StyleSheet.create(context => {
     return {
         text: {
@@ -44,3 +24,23 @@ const stylesFactory = StyleSheet.create(context => {
         },
     };
 });
+
+function MyComponent() {
+    const styles = useStyles(stylesFactory);
+
+    return (
+        <View style={styles.container}>
+            <Text style={styles.text}>Hello World</Text>
+        </View>
+    );
+}
+
+export default function App() {
+    return (
+        <StrictMode>
+            <AppProvider theme={theme} context={appContext}>
+                <MyComponent />
+            </AppProvider>
+        </StrictMode>
+    );
+}

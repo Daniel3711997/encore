@@ -48,6 +48,8 @@ export const StyleSheet = {
     create: createFactory,
 };
 
+export const appContext = createAppContext(theme);
+
 export const useFunctions = () => {
     return useFunctionsBase(appContext);
 };
@@ -55,8 +57,6 @@ export const useFunctions = () => {
 export const useAppContext = () => {
     return useAppContextBase(appContext);
 };
-
-export const appContext = createAppContext(theme);
 
 export const useStyles = <T>(styles: StylesConstructor<T, typeof theme>) => {
     return useStylesBase(styles, appContext);

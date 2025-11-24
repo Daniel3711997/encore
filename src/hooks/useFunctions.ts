@@ -7,6 +7,16 @@ import { config } from '../app/config';
 import { designLogicalPixelsToDeviceLogicalPixels } from '../app/helpers';
 import { useAppContext } from '../components/AppContext';
 
+const createScaleFunction = <T>(base: Property, context: AppContextProps<T>) => {
+    return (px: number, customMaxUpScale?: ScaleProperty, customMaxDownScale?: ScaleProperty) =>
+        designLogicalPixelsToDeviceLogicalPixels(px, base, {
+            customMaxUpScale,
+            customMaxDownScale,
+            orientation: context.orientation,
+            dimensions: context['screen' === config.dimensionsController ? 'screenDimensions' : 'windowDimensions'],
+        });
+};
+
 export const useFunctions = <T>(appContext: Context<AppContextProps<T>>): Functions => {
     const context = useAppContext(appContext);
 
@@ -19,14 +29,4 @@ export const useFunctions = <T>(appContext: Context<AppContextProps<T>>): Functi
         }),
         [context],
     );
-};
-
-const createScaleFunction = <T>(base: Property, context: AppContextProps<T>) => {
-    return (px: number, customMaxUpScale?: ScaleProperty, customMaxDownScale?: ScaleProperty) =>
-        designLogicalPixelsToDeviceLogicalPixels(px, base, {
-            customMaxUpScale,
-            customMaxDownScale,
-            orientation: context.orientation,
-            dimensions: context['screen' === config.dimensionsController ? 'screenDimensions' : 'windowDimensions'],
-        });
 };
